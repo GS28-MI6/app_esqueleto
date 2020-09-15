@@ -13,9 +13,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div className="App">
-            <Route path="/" render={props => <Counts />} />
-          </div>
+          <Route exact path="/" render={props => <Counts />} />
         </Router>
       </Provider>
     );

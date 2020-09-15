@@ -10,9 +10,14 @@ class Counts extends Component {
 
     render() {
         console.log(this.props.count)
+        var counter = 0
+        if (this.props.count > 0){
+            counter = this.props.count
+        }
         return (
             <div>
                 <button type="button" style={{width: 100, height: 100}} onClick={() => this.props.addOneToCount(this.props.count)}>Add 1</button>
+                <h1>{counter}</h1>
             </div>
         )
     }
